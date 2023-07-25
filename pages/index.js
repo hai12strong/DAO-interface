@@ -1,11 +1,11 @@
 import Head from 'next/head';
-import Image from 'next/image';
-import {NFT_ABI, NFT_CONTRACT, DAO_ABI, DAO_CONTRACT} from "../constants";
-import {utils, Contract, providers, BigNumber} from "ethers";
-import Web3Modal from "web3modal";
+
+import {NFT_ABI, NFT_CONTRACT, DAO_ABI, DAO_CONTRACT} from '../constants';
+import {utils, Contract, providers, BigNumber} from 'ethers';
+import Web3Modal from 'web3modal';
 import styles from '@/styles/Home.module.css';
 import { useEffect, useRef, useState } from 'react';
-import { Web3Provider } from '@ethersproject/providers';
+
 
 
 export default function Home() {
@@ -316,7 +316,7 @@ export default function Home() {
       if(numProposal===0) {
         return (
         <div>
-          <p>There are no proposals to display. You can create a new proposal by click "Create a proposal"</p>
+          <p>There are no proposals to display. You can create a new proposal by clicking Create a proposal</p>
         </div>)
       } else {
         const renderedProposal = proposals.map(proposal =>{
@@ -416,7 +416,7 @@ export default function Home() {
 
         </div>
         <div>
-          <img src="./2.svg"/>
+          <img alt="web3-image" src="./2.svg"/>
         </div>
 
         
